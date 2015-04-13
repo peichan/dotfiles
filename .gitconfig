@@ -1,0 +1,10 @@
+[alias]
+    co = checkout
+    hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
+    br = branch
+    st = status
+    ci = commit -m
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+    cob = checkout -b
+[color]
+    ui = true
