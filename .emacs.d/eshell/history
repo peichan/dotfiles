@@ -1,0 +1,8 @@
+ls
+ls
+cd ..
+open .
+pwd > /del/clip
+pwd > /dev/clip
+pwd > /dev/kill
+ curl 'http://gdata.youtube.com/feeds/api/videos?q=fripSide'

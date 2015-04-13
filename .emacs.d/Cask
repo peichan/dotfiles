@@ -1,0 +1,133 @@
+(source gnu)
+(source marmalade)
+(source melpa)
+
+;; setup
+(depends-on "init-loader")
+(depends-on "exec-path-from-shell")
+
+;; color
+(depends-on "color-theme")
+
+;; powerline
+(depends-on "powerline")
+
+;; highlight
+(depends-on "vline")
+(depends-on "auto-highlight-symbol")
+
+;; save
+(depends-on "auto-save-buffers-enhanced")
+
+;; keyutility
+(depends-on "sequential-command")
+
+;; undo
+(depends-on "undo-tree")
+
+;; autoinsert template
+(depends-on "autoinsert")
+
+;; dired
+(depends-on "wdired")
+
+;; search
+(depends-on "anzu")
+
+;; auto-complete
+(depends-on "auto-complete")
+(depends-on "fuzzy")
+(depends-on "popup")
+(depends-on "ac-ispell")
+(depends-on "ac-etags")
+
+;; helm
+(depends-on "helm")
+(depends-on "helm-ag")
+(depends-on "helm-descbinds")
+(depends-on "helm-open-github")
+(depends-on "helm-migemo")
+
+;; wgrep
+(depends-on "wgrep")
+
+;; recentf
+(depends-on "recentf-ext")
+
+;; snippet
+(depends-on "yasnippet")
+
+;; mac copy
+(depends-on "pbcopy")
+
+;; twitter
+(depends-on "twittering-mode")
+
+;; programming ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; misc
+(depends-on "autopair")
+(depends-on "rainbow-mode")
+(depends-on "flycheck")
+(depends-on "quickrun")
+
+;; git
+(depends-on "magit")
+(depends-on "git-gutter+")
+
+;; perl
+(depends-on "cperl-mode")
+(depends-on "helm-perldoc")
+(depends-on "perlbrew")
+(depends-on "perl-completion")
+
+;; python
+(depends-on "python-mode")
+
+;; ruby
+(depends-on "rhtml-mode")
+(depends-on "ruby-block")
+(depends-on "ruby-compilation")
+(depends-on "ruby-end")
+(depends-on "ruby-mode")
+(depends-on "ruby-tools")
+
+;; python
+(depends-on "helm-pydoc")
+(depends-on "jedi")
+
+;; go
+(depends-on "go-mode")
+(depends-on "go-autocomplete")
+(depends-on "go-eldoc")
+
+;; scala
+(depends-on "scala-mode2")
+(depends-on "ensime")
+
+;; coffee-script
+(depends-on "coffee-mode")
+
+;; javascript
+(depends-on "js2-mode")
+
+;; haskell
+(depends-on "haskell-mode")
+(depends-on "ghc")
+
+;; markup lanuage
+(depends-on "web-mode")
+(depends-on "yaml-mode")
+
+;; sass / less
+(depends-on "scss-mode")
+(depends-on "less-css-mode")
+
+;; markdown
+(depends-on "markdown-mode")
+(depends-on "markdown-mode+")
+
+;; json
+(depends-on "json-mode")
+
+;; puppet
+(depends-on "puppet-mode")

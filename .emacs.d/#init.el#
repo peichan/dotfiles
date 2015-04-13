@@ -1,0 +1,28 @@
+;’¥í’¡¼’¥É’¥Ñ’¥¹’¤Î’»Ø’Äê
+(setq load-path (cons "~/.emacs.d/rubyel" load-path))
+;; ruby-mode’¤Î’Àß’Äê
+(autoload 'ruby-mode "ruby-mode"
+  "Mode for editing ruby source files" t)
+(setq auto-mode-alist
+      (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
+(setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
+                                     interpreter-mode-alist))
+(autoload 'run-ruby "inf-ruby"
+  "Run an inferior Ruby process")
+(autoload 'inf-ruby-keys "inf-ruby"
+  "Set local key defs for inf-ruby in ruby-mode")
+(add-hook 'ruby-mode-hook
+          '(lambda () (inf-ruby-keys)))
+;; ruby-electric(’³ç’¸Ì’¼«’Æ°’Êä’´°)’¤Î’Àß’Äê
+(require 'ruby-electric)
+(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
+;; rubydb(’¥Ç’¥Ð’¥Ã’¥¬)’¤Î’Àß’Äê
+(autoload 'rubydb "rubydb3x"
+  "run rubydb on program file in buffer *gud-file*.
+the directory containing file becomes the initial working directory
+and source-file directory for your debugger." t)
+;; ruby-block(end’¤Ë’¥«’¡¼’¥½’¥ë’¹ç’¤ï’¤»’¤ë’¤È’ÂÐ’¤Î’¥ï’¡¼’¥É’¤¬’¸÷’¤ë)’¤Î’Àß’Äê
+(require 'ruby-block)
+(ruby-block-mode t)
+;; ’¥ß’¥Ë’¥Ð’¥Ã’¥Õ’¥¡’¤Ë’É½’¼¨’¤·, ’¤«’¤Ä, ’¥ª’¡¼’¥Ð’¥ì’¥¤’¤¹’¤ë.
+(setq ruby-block-highlight-toggle t)
